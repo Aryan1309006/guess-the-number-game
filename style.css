@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(226, 224, 224);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  height: 180px;
+  /* border: 2px solid; */
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.519);
+}
+.inputbox input {
+  height: 30px;
+  margin: 5px;
+}
+.inputbox button {
+  height: 30px;
+  font-size: 15px;
+  padding: 8px;
+  color: white;
+  background-color: rgb(44, 92, 251);
+  border: none;
+  border-radius: 6px;
+}

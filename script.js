@@ -8,7 +8,9 @@
       let chances = 10;
 
       function check() {
+        
         const guess = parseInt(input.value);
+        input.value='';
 
         if (!guess || guess < 1 || guess > 100) {
           hint.textContent = "Please enter a valid number between 1 and 100.";
@@ -19,6 +21,7 @@
 
         if (guess === number) {
           hint.textContent = "Congratulations! You guessed the correct number!";
+          hint.style.color="Green";
           chancesDisplay.textContent = chances;
           return;
         } else if (guess < number) {
@@ -28,9 +31,11 @@
         }
 
         chancesDisplay.textContent = chances;
+        
 
         if (chances === 0) {
           hint.textContent = `Game Over! The correct number was ${number}.`;
+          hint.style.color="red";
           document.querySelector("button").disabled = true;
         }
       }
